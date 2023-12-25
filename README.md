@@ -28,14 +28,12 @@ This project is an online course sales website built using HTML, CSS, and Bootst
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Shubham1734/online-course-website.git
+   git clone https://github.com/Shubham1734/Enark-Project.git
 
 # Technology Used
 - HTML: The backbone of the project, providing the structure and content of the web pages.
 - CSS: Used for styling and layout, ensuring a visually pleasing and consistent design.
 - Bootstrap: Leveraged for its responsive design components, grid system, and pre-built styles, enhancing the overall user experience.
-
-# Demo
 
 # Screenshots
 
