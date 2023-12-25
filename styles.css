@@ -1,0 +1,52 @@
+/* styles.css */
+
+/* Navigation Bar Styling */
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand {
+    color: #ffffff;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f8f9fa;
+}
+
+/* Course Showcase Section Styling */
+.container mt-4 {
+    text-align: center;
+    padding: 20px;
+}
+
+.row mt-4 {
+    justify-content: center;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Add more styles as needed */

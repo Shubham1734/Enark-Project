@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Course Store</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="courses.html">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">Cart</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <h2>Shopping Cart</h2>
+        <div class="row mt-4 border border-dark">
+            <div class="col-lg-12">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Course</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Total</th>
+                            <th scope="col">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cartItems">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="card">
+                    <div class="card-body border border-dark">
+                        <h5 class="card-title">Cart Summary</h5>
+                        <p>Total Courses: <span id="totalCourses">0</span></p>
+                        <p>Total Cost: Rs <span id="totalCost">0.00</span></p>
+                        <a href="#" class="btn btn-primary">Proceed to Checkout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+            function renderCartItems() {
+                const cartItemsContainer = document.getElementById('cartItems');
+                cartItemsContainer.innerHTML = '';
+
+                cartItems.forEach(item => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${item.title}</td>
+                        <td>Rs ${item.price.toFixed(2)}</td>
+                        <td>
+                            <input type="number" value="${item.quantity}" min="1" onchange="updateQuantity('${item.title}', this.value)">
+                        </td>
+                        <td>Rs ${(item.price * item.quantity).toFixed(2)}</td>
+                        <td>
+                            <button class="btn btn-danger btn-sm" onclick="removeFromCart('${item.title}')">Remove</button>
+                        </td>
+                    `;
+                    cartItemsContainer.appendChild(row);
+                });
+
+                const totalCoursesElement = document.getElementById('totalCourses');
+                const totalCostElement = document.getElementById('totalCost');
+                const totalCourses = cartItems.reduce((total, item) => total + item.quantity, 0);
+                const totalCost = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
+                totalCoursesElement.textContent = totalCourses;
+                totalCostElement.textContent = totalCost.toFixed(2);
+            }
+
+            window.removeFromCart = function (courseTitle) {
+                cartItems = cartItems.filter(item => item.title !== courseTitle);
+                updateLocalStorageAndRender();
+            }
+
+            window.updateQuantity = function (courseTitle, quantity) {
+                const index = cartItems.findIndex(item => item.title === courseTitle);
+                if (index !== -1) {
+                    cartItems[index].quantity = parseInt(quantity, 10);
+                }
+                updateLocalStorageAndRender();
+            }
+
+            function updateLocalStorageAndRender() {
+                localStorage.setItem('cart', JSON.stringify(cartItems));
+                renderCartItems();
+            }
+
+            renderCartItems();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Course Store</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="courses.html">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">Cart</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-4 pt-4 border border-dark">
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <img width = "600" src="/images/download (1).jpeg" class="img-fluid" alt="Course Image">
+            </div>
+
+            <div class="col-lg-6">
+                <h2>Course 1: Data Science for Beginners</h2>
+                <p class="lead">Instructor: Georgios Ouzounis</p>
+                <p class="lead">Price: Rs 1200</p>
+                <p>Data scientist is one of the best suited professions to thrive this century. It is digital, programming-oriented, and analytical. Therefore, it comes as no surprise that the demand for data scientists has been surging in the job marketplace.</p>
+                <p>However, supply has been very limited. It is difficult to acquire the skills necessary to be hired as a data scientist. </p>
+                <p>Universities have been slow at creating specialized data science programs. (not to mention that the ones that exist are very expensive and time consuming)</p>
+
+                <button class="btn btn-primary mt-3" onclick="addToCart('Data Science for Beginners', 1200)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="row mt-4 d-flex justify-content-center text-center">
+            <div class="col-lg-12">
+                <h3>About the Instructor</h3>
+                <p><strong>Georgios Ouzounis</strong> has over 10 years of experience in Data Science...</p>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4 pt-4 border border-dark">
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <img width = "600" src="/images/download (2).jpeg" class="img-fluid" alt="Course Image">
+            </div>
+
+            <div class="col-lg-6">
+                <h2>Course 2: C++ Programming</h2>
+                <p class="lead">Instructor: Dr.Frank Mitropoulos</p>
+                <p class="lead">Price: Rs 1000</p>
+                <p>Which programming language is often seen as a badge of honor among software developers?  C++</p>
+                <p>Which programming language can you learn that when added to your resume,  will often get you a job interview?  C++  </p>
+                <p>Which programming language is routinely ranked in the top 5 programming languages by popularity, and been consistently in the top 10 for close to 20 years?  C++</p>
+
+                <button class="btn btn-primary mt-3" onclick="addToCart('C++ Programming', 1000)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="row mt-4 d-flex justify-content-center text-center">
+            <div class="col-lg-12">
+                <h3>About the Instructor</h3>
+                <p><strong>Dr.Frank Mitropoulos</strong> has over 5 years of experience in C++ Programming...</p>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4 pt-4 border border-dark">
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <img width = "600" src="/images/download.jpeg" class="img-fluid" alt="Course Image">
+            </div>
+
+            <div class="col-lg-6">
+                <h2 class = "courseTitle">Course 3: Artificial Intelligence</h2>
+                <p class="lead">Instructor: Sam Altman</p>
+                <p class="lead">Price: Rs 2500</p>
+                <p class = "courseDescription">This course will provide you with in-depth knowledge on a very hot topic i.e., Artificial Intelligence(AI).</p>
+                <p> The purpose of this course is to provide you with knowledge of key aspects of modern AI without any intimidating mathematics and in a practical, easy, and fun way. The course provides students with practical hands-on experience using real-world datasets.</p>
+                <p>This course will take you through the basics to an advanced level.</p>
+                <button class="btn btn-primary mt-3" onclick="addToCart('Artificial Intelligence', 2500)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="row mt-4 d-flex justify-content-center text-center">
+            <div class="col-lg-12">
+                <h3>About the Instructor</h3>
+                <p><strong>Sam Altman</strong> has over 3 years of experience in Artificial Intelligence...</p>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4 pt-4 border border-dark">
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <img width = "600" src="/images/download3.jpeg" class="img-fluid" alt="Course Image">
+            </div>
+            <div class="col-lg-6">
+                <h2 class = "courseTitle">Course 4: PHP Programming</h2>
+                <p class="lead">Instructor: Amir Kamizi</p>
+                <p class="lead">Price: Rs 1500</p>
+                <p class = "courseDescription">Students learn to integrate client-server communication into web pages to create dynamic functionality using PHP.</p>
+                <p> We start with the fundamentals, including PHP syntax and variable declaration. The course transitions into working with objects, arithmetic operators, conditional statements, loops, functions and arrays.</p>
+                <p>Students will also learn to utilize server side form validation techniques to maintain data integrity.</p>
+
+                <button class="btn btn-primary mt-3" onclick="addToCart('Artificial Intelligence', 2500)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="row mt-4 d-flex justify-content-center text-center">
+            <div class="col-lg-12">
+                <h3>About the Instructor</h3>
+                <p><strong>Amir Kamizi</strong> has over 5 years of experience in PHP Programming...</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const courseId = urlParams.get('course');
+
+            document.getElementById('courseTitle').textContent = `Course ${courseId} Details`;
+            document.getElementById('courseDescription').textContent = 'This is a placeholder description for the course. Replace it with the actual course details.';
+        });
+        function addToCart(courseTitle, price) {    
+            let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+            const existingCourse = cartItems.find(item => item.title === courseTitle);
+
+            if (existingCourse) {
+                existingCourse.quantity += 1;
+            } else {
+                cartItems.push({ title: courseTitle, price: price, quantity: 1 });
+            }
+            localStorage.setItem('cart', JSON.stringify(cartItems));
+
+            window.location.href = 'cart.html';
+        }
+    </script>
+</body>
+</html>

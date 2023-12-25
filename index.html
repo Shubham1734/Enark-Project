@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Course Store</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @media (max-width: 575px) {
+            .jumbotron {
+                padding: 1rem;
+            }
+        }
+
+        @media (min-width: 575px) {
+            .card {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Course Store</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="courses.html">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">Cart</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="jumbotron jumbotron-fluid bg-dark text-white rounded shadow-lg">
+            <div class="container text-center">
+                <h1 class="display-4">Unleash Your Potential</h1>
+                <p class="lead">Elevate your skills with our cutting-edge online courses.</p>
+                <hr class="my-4">
+                <p>Discover a world of knowledge and innovation through our expertly crafted courses.</p>
+                <a class="btn btn-primary btn-lg" href="courses.html" role="button">Explore Courses</a>
+            </div>
+        </div>
+    
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="/images/download (1).jpeg" class="card-img-top" alt="Course Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Science for Beginners</h5>
+                        <p class="card-text">The goal of 'Data Science for Beginners' is to get you acquainted with Data Science methodology.</p>
+                        <a href="course_detail.html?course=1" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card" style="height: 400px;">
+                    <img src="/images/download (2).jpeg" class="card-img-top" alt="Course Image">
+                    <div class="card-body">
+                        <h5 class="card-title">C++ Programming</h5>
+                        <p class="card-text">This course covers C++ from very basic to more advanced features.Every topic is covered in greater detail. </p>
+                        <a href="course_detail.html?course=2" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card" style="height: 400px;">
+                    <img src="/images/download.jpeg" class="card-img-top" alt="Course Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Artificial Intelligence</h5>
+                        <p class="card-text">AI refers to the simulation of human intelligence in machines that are programmed to think like humans.</p>
+                        <a href="course_detail.html?course=3" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="/images/download3.jpeg" class="card-img-top" alt="Course Image">
+                    <div class="card-body">
+                        <h5 class="card-title">PHP Programming for Beginners</h5>
+                        <p class="card-text">Students learn to integrate client-server communication into web pages to create dynamic functionality using PHP.</p>
+                        <a href="course_detail.html?course=4" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="/images/pexels-julia-m-cameron-4145355.jpg" class="card-img-top" alt="Course Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Ultimate AWS Certified Cloud</h5>
+                        <p class="card-text">Welcome! I'm here to help you prepare and PASS the newest AWS Certified Cloud Practitioner exam.</p>
+                        <a href="course_detail.html?course=5" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="/images/pexels-max-fischer-5212687.jpg" class="card-img-top" alt="Course Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Complete Javascript Course 2024</h5>
+                        <p class="card-text">JavaScript is the most popular programming language in the world. It powers the entire modern web. </p>
+                        <a href="course_detail.html?course=6" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="/images/pexels-pixabay-60504.jpg" class="card-img-top" alt="Course Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Cyber Security for Beginners</h5>
+                        <p class="card-text">Learn a practical skill-set in defeating all online threats, including - advanced hackers, trackers, malware, zero days, exploit kits, cybercriminals and more.</p>
+                        <a href="course_detail.html?course=7" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="/images/pexels-realtoughcandycom-11035474.jpg" class="card-img-top" alt="Course Image">
+                    <div class="card-body">
+                        <h5 class="card-title">100 Days of Python</h5>
+                        <p class="card-text">Welcome to the 100 Days of Code - The Complete Python Pro Bootcamp, the only course you need to learn to code with Python.</p>
+                        <a href="course_detail.html?course=8" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="/images/pexels-realtoughcandycom-11035547.jpg" class="card-img-top" alt="Course Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Java Programming</h5>
+                        <p class="card-text">Do you want to learn how to code and land a cool Java programming job? Java is a really popular language for creating applications and websites.</p>
+                        <a href="course_detail.html?course=9" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
