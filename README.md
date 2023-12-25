@@ -36,5 +36,14 @@ This project is an online course sales website built using HTML, CSS, and Bootst
 - Bootstrap: Leveraged for its responsive design components, grid system, and pre-built styles, enhancing the overall user experience.
 
 # Screenshots
+## Home Page
+![Screenshot (1082)](https://github.com/Shubham1734/Enark-Project/assets/93915712/56177408-cd32-4798-8435-ab45e00a2664)
+## Course Page
+![Screenshot (1083)](https://github.com/Shubham1734/Enark-Project/assets/93915712/f55c723b-9d34-4743-9526-73625cf61ada)
+## Cart Page
+![Screenshot (1084)](https://github.com/Shubham1734/Enark-Project/assets/93915712/6ff9b775-6a8a-4e98-afa2-de1699ffe935)
+## Course Detail Page
+![Screenshot (1085)](https://github.com/Shubham1734/Enark-Project/assets/93915712/d397af57-4767-424a-adce-6f2614f155e2)
+
 
 
